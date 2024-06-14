@@ -6,3 +6,10 @@ p{
 color:black;
 background-color:white;
 }
+
+.box{
+color:green;
+background-color:blue;
+border: solid red 5px;
+boder-radius:15px;
+}
