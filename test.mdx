@@ -1,15 +1,6 @@
-# Using Python with pyserial and a DMX interface (e.g., Enttec USB DMX Pro)
-import serial
-import time
+#MDX file testing with some python code
 
-dmx_data = [0] * 512  # 512 DMX channels
-dmx_data[0] = 255  # Set channel 1 to full brightness (value 255)
-
-def send_dmx_data(data):
-    with serial.Serial('COM3', 57600) as dmx:
-        dmx.write(b'\x7E\x06')  # Start message for DMX
-        dmx.write(len(data).to_bytes(2, 'little'))  # Length
-        dmx.write(bytearray(data))  # DMX data
-        dmx.write(b'\xE7')  # End message
-
-send_dmx_data(dmx_data)
+```python
+print("hello world")
+```
+End
