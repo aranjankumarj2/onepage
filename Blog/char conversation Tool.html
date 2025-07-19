@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lowercase to Uppercase Converter</title>
+</head>
+<body>
+  <h3>Convert Lowercase to Uppercase</h3>
+  <input type="text" id="inputText" placeholder="Type here" oninput="convertToUpper()">
+  <p>Uppercase: <span id="outputText"></span></p>
+
+  <script>
+    function convertToUpper() {
+      const input = document.getElementById("inputText").value;
+      document.getElementById("outputText").textContent = input.toUpperCase();
+    }
+  </script>
+</body>
+</html>
